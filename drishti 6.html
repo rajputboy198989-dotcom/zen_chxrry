@@ -1,0 +1,1926 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+
+<meta
+  name="viewport"
+  content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+>
+
+<meta
+  name="theme-color"
+  content="#100a18"
+>
+
+<title>For Drishti ♡ Happy Birthday</title>
+
+<link
+  rel="preconnect"
+  href="https://fonts.googleapis.com"
+>
+
+<link
+  rel="preconnect"
+  href="https://fonts.gstatic.com"
+  crossorigin
+>
+
+<link
+  href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Great+Vibes&display=swap"
+  rel="stylesheet"
+>
+
+<style>
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  min-height:100vh;
+  overflow-x:hidden;
+
+  font-family:"DM Sans",sans-serif;
+  color:#fff;
+
+  background:
+    radial-gradient(
+      circle at 15% 15%,
+      rgba(255,170,215,.17),
+      transparent 28%
+    ),
+    radial-gradient(
+      circle at 85% 25%,
+      rgba(193,165,255,.14),
+      transparent 28%
+    ),
+    radial-gradient(
+      circle at 50% 100%,
+      rgba(255,120,190,.09),
+      transparent 38%
+    ),
+    #100a18;
+}
+
+
+/* =========================
+   BACKGROUND
+========================= */
+
+.background{
+  position:fixed;
+  inset:0;
+  overflow:hidden;
+  pointer-events:none;
+  z-index:0;
+}
+
+.glow{
+  position:absolute;
+  width:230px;
+  height:230px;
+  border-radius:50%;
+  opacity:.13;
+  will-change:transform;
+}
+
+.glow.one{
+  background:#ff8acb;
+  left:-120px;
+  top:5%;
+  animation:
+    glowOne
+    16s
+    ease-in-out
+    infinite
+    alternate;
+}
+
+.glow.two{
+  background:#a98cff;
+  right:-120px;
+  bottom:8%;
+  animation:
+    glowTwo
+    18s
+    ease-in-out
+    infinite
+    alternate;
+}
+
+@keyframes glowOne{
+  from{
+    transform:translate3d(0,0,0);
+  }
+
+  to{
+    transform:translate3d(35px,-20px,0);
+  }
+}
+
+@keyframes glowTwo{
+  from{
+    transform:translate3d(0,0,0);
+  }
+
+  to{
+    transform:translate3d(-30px,20px,0);
+  }
+}
+
+
+/* =========================
+   LIGHTWEIGHT STARS
+========================= */
+
+.background::before{
+  content:"";
+
+  position:absolute;
+  inset:0;
+
+  opacity:.55;
+
+  background-image:
+    radial-gradient(
+      circle,
+      rgba(255,255,255,.75) 0 1px,
+      transparent 1.5px
+    ),
+    radial-gradient(
+      circle,
+      rgba(255,220,240,.5) 0 1px,
+      transparent 1.5px
+    );
+
+  background-size:
+    83px 91px,
+    137px 121px;
+
+  background-position:
+    8px 15px,
+    40px 65px;
+}
+
+.background::after{
+  content:"";
+
+  position:absolute;
+  inset:0;
+
+  opacity:.22;
+
+  background-image:
+    radial-gradient(
+      circle,
+      rgba(255,255,255,.8) 0 1px,
+      transparent 1.5px
+    );
+
+  background-size:113px 127px;
+}
+
+
+/* =========================
+   FLOATING HEARTS
+========================= */
+
+.float-heart{
+  position:fixed;
+  bottom:-35px;
+
+  pointer-events:none;
+  z-index:2;
+
+  opacity:0;
+
+  animation:
+    floatHeart
+    11s
+    linear
+    infinite;
+
+  will-change:
+    transform,
+    opacity;
+}
+
+@keyframes floatHeart{
+
+  0%{
+    transform:
+      translate3d(0,0,0)
+      scale(.7);
+
+    opacity:0;
+  }
+
+  15%{
+    opacity:.5;
+  }
+
+  80%{
+    opacity:.25;
+  }
+
+  100%{
+    transform:
+      translate3d(0,-105vh,0)
+      scale(1);
+
+    opacity:0;
+  }
+}
+
+
+/* =========================
+   PAGE
+========================= */
+
+.page{
+  position:relative;
+  z-index:5;
+
+  min-height:100vh;
+
+  padding:
+    20px
+    14px
+    35px;
+
+  display:flex;
+
+  justify-content:center;
+  align-items:center;
+}
+
+
+/* =========================
+   CARD
+========================= */
+
+.card{
+
+  width:min(470px,100%);
+
+  padding:
+    30px
+    22px
+    25px;
+
+  border-radius:38px;
+
+  border:
+    1px solid
+    rgba(255,255,255,.15);
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(255,255,255,.09),
+      rgba(255,255,255,.035)
+    );
+
+  backdrop-filter:blur(8px);
+  -webkit-backdrop-filter:blur(8px);
+
+  box-shadow:
+    0 22px 55px
+    rgba(0,0,0,.42),
+
+    inset 0 1px 0
+    rgba(255,255,255,.12);
+
+  text-align:center;
+
+  overflow:hidden;
+
+  animation:
+    cardIn
+    .55s
+    ease-out;
+}
+
+@keyframes cardIn{
+
+  from{
+    opacity:0;
+
+    transform:
+      translate3d(0,15px,0)
+      scale(.985);
+  }
+
+  to{
+    opacity:1;
+
+    transform:
+      translate3d(0,0,0)
+      scale(1);
+  }
+}
+
+
+/* =========================
+   BADGE
+========================= */
+
+.badge{
+
+  display:inline-flex;
+
+  align-items:center;
+  gap:7px;
+
+  padding:
+    8px
+    14px;
+
+  border-radius:999px;
+
+  background:
+    rgba(255,255,255,.05);
+
+  border:
+    1px solid
+    rgba(255,255,255,.09);
+
+  color:
+    rgba(255,255,255,.66);
+
+  font-size:11px;
+
+  letter-spacing:1.5px;
+
+  text-transform:uppercase;
+
+  margin-bottom:19px;
+}
+
+
+/* =========================
+   DRISHTI
+========================= */
+
+.name{
+
+  font-family:
+    "Great Vibes",
+    cursive;
+
+  font-size:78px;
+
+  line-height:.95;
+
+  margin-bottom:10px;
+
+  background:
+    linear-gradient(
+      90deg,
+      #fff,
+      #ffd2ed,
+      #e5caff,
+      #fff
+    );
+
+  -webkit-background-clip:text;
+  background-clip:text;
+
+  color:transparent;
+
+  filter:
+    drop-shadow(
+      0 5px 13px
+      rgba(255,155,215,.20)
+    );
+}
+
+
+/* =========================
+   TEXT
+========================= */
+
+.birthday{
+
+  font-size:22px;
+  font-weight:600;
+
+  color:
+    rgba(255,255,255,.88);
+
+  margin-bottom:8px;
+}
+
+.birthday span{
+  color:#ffc8e7;
+}
+
+.subtitle{
+
+  font-size:13px;
+
+  color:
+    rgba(255,255,255,.54);
+
+  line-height:1.7;
+
+  max-width:330px;
+
+  margin:
+    0 auto
+    17px;
+}
+
+
+/* =========================
+   CAKE
+========================= */
+
+.cake-wrap{
+
+  width:190px;
+  height:170px;
+
+  margin:
+    3px auto
+    10px;
+
+  position:relative;
+}
+
+.cake-shadow{
+
+  position:absolute;
+
+  bottom:14px;
+  left:25px;
+
+  width:140px;
+  height:18px;
+
+  background:
+    rgba(0,0,0,.23);
+
+  border-radius:50%;
+}
+
+.cake-bottom{
+
+  position:absolute;
+
+  bottom:22px;
+  left:35px;
+
+  width:120px;
+  height:58px;
+
+  border-radius:
+    8px
+    8px
+    20px
+    20px;
+
+  background:
+    linear-gradient(
+      180deg,
+      #c78bdc,
+      #a75fc4
+    );
+}
+
+.cake-top{
+
+  position:absolute;
+
+  bottom:63px;
+  left:25px;
+
+  width:140px;
+  height:62px;
+
+  border-radius:
+    13px
+    13px
+    20px
+    20px;
+
+  background:
+    linear-gradient(
+      180deg,
+      #ffcae7,
+      #ff86bf
+    );
+}
+
+.cream{
+
+  position:absolute;
+
+  top:-2px;
+
+  width:100%;
+  height:18px;
+
+  border-radius:50%;
+
+  background:#fff0f8;
+}
+
+.cake-dot{
+
+  position:absolute;
+
+  width:7px;
+  height:7px;
+
+  border-radius:50%;
+
+  background:#fff;
+
+  opacity:.8;
+}
+
+.dot1{
+  left:28px;
+  top:31px;
+}
+
+.dot2{
+  left:58px;
+  top:43px;
+}
+
+.dot3{
+  right:28px;
+  top:28px;
+}
+
+.dot4{
+  right:53px;
+  top:46px;
+}
+
+
+/* =========================
+   CANDLES
+========================= */
+
+.candle{
+
+  position:absolute;
+
+  bottom:119px;
+
+  width:9px;
+  height:34px;
+
+  border-radius:5px;
+
+  background:
+    repeating-linear-gradient(
+      135deg,
+      #fff 0 5px,
+      #f5b8d7 5px 10px
+    );
+
+  z-index:4;
+}
+
+.c1{
+  left:67px;
+}
+
+.c2{
+  left:91px;
+}
+
+.c3{
+  left:115px;
+}
+
+
+/* =========================
+   FLAMES
+========================= */
+
+.flame{
+
+  position:absolute;
+
+  bottom:148px;
+
+  width:14px;
+  height:20px;
+
+  background:#ffd36d;
+
+  border-radius:
+    50%
+    50%
+    50%
+    0;
+
+  transform:rotate(-45deg);
+
+  box-shadow:
+    0 0 10px
+    rgba(255,210,100,.55);
+
+  animation:
+    flame
+    1s
+    ease-in-out
+    infinite
+    alternate;
+
+  z-index:5;
+}
+
+.f1{
+  left:65px;
+}
+
+.f2{
+  left:89px;
+}
+
+.f3{
+  left:113px;
+}
+
+@keyframes flame{
+
+  from{
+    transform:
+      rotate(-45deg)
+      scale(.92);
+  }
+
+  to{
+    transform:
+      rotate(-45deg)
+      scale(1.06);
+  }
+}
+
+
+/* =========================
+   MESSAGE
+========================= */
+
+.message{
+
+  max-width:360px;
+
+  margin:
+    4px auto
+    20px;
+
+  color:
+    rgba(255,255,255,.70);
+
+  font-size:14px;
+
+  line-height:1.8;
+}
+
+.message b{
+  color:#ffd2e9;
+}
+
+
+/* =========================
+   MAIN BUTTON
+========================= */
+
+.main-button{
+
+  border:none;
+
+  padding:
+    14px
+    23px;
+
+  border-radius:999px;
+
+  cursor:pointer;
+
+  font-family:
+    "DM Sans",
+    sans-serif;
+
+  font-size:14px;
+
+  font-weight:700;
+
+  color:#351328;
+
+  background:
+    linear-gradient(
+      135deg,
+      #ffd9ed,
+      #ead4ff
+    );
+
+  box-shadow:
+    0 8px 20px
+    rgba(255,150,215,.16);
+
+  transition:
+    transform .18s ease;
+}
+
+.main-button:active{
+  transform:scale(.96);
+}
+
+
+/* =========================
+   SECOND PAGE
+========================= */
+
+#surprise{
+
+  display:none;
+
+  padding-top:1px;
+
+  animation:
+    secondPage
+    .45s
+    ease-out;
+}
+
+@keyframes secondPage{
+
+  from{
+    opacity:0;
+
+    transform:
+      translate3d(0,10px,0);
+  }
+
+  to{
+    opacity:1;
+
+    transform:
+      translate3d(0,0,0);
+  }
+}
+
+
+/* =========================
+   DIVIDER
+========================= */
+
+.divider{
+
+  width:65px;
+  height:1px;
+
+  margin:
+    25px auto;
+
+  background:
+    rgba(255,255,255,.18);
+}
+
+
+/* =========================
+   QUOTE
+========================= */
+
+.quote{
+
+  font-family:
+    "Great Vibes",
+    cursive;
+
+  font-size:34px;
+
+  line-height:1.35;
+
+  color:#ffd2ea;
+
+  margin-bottom:16px;
+}
+
+
+/* =========================
+   NOTE
+========================= */
+
+.note{
+
+  max-width:350px;
+
+  margin:auto;
+
+  font-size:13px;
+
+  line-height:1.85;
+
+  color:
+    rgba(255,255,255,.64);
+}
+
+.note strong{
+  color:#ffd1e9;
+}
+
+
+/* =========================
+   YOUTUBE SURPRISE BUTTON
+========================= */
+
+.youtube-button{
+
+  display:inline-flex;
+
+  align-items:center;
+  justify-content:center;
+
+  gap:8px;
+
+  margin-top:20px;
+
+  padding:
+    12px
+    20px;
+
+  border-radius:999px;
+
+  text-decoration:none;
+
+  font-size:13px;
+
+  font-weight:700;
+
+  color:#fff;
+
+  background:
+    linear-gradient(
+      135deg,
+      #ff6b91,
+      #d86bff
+    );
+
+  border:
+    1px solid
+    rgba(255,255,255,.16);
+
+  box-shadow:
+    0 8px 20px
+    rgba(255,90,160,.15);
+
+  transition:
+    transform .18s ease;
+}
+
+.youtube-button:active{
+  transform:scale(.96);
+}
+
+.youtube-icon{
+  font-size:14px;
+}
+
+
+/* =========================
+   SIMPLE LAZURAX
+========================= */
+
+.signature{
+
+  margin-top:31px;
+
+  display:flex;
+
+  flex-direction:column;
+
+  align-items:center;
+
+  gap:3px;
+}
+
+.signature-small{
+
+  font-size:9px;
+
+  letter-spacing:2.2px;
+
+  text-transform:uppercase;
+
+  color:
+    rgba(255,255,255,.34);
+}
+
+.signature-name{
+
+  font-family:
+    "Great Vibes",
+    cursive;
+
+  font-size:38px;
+
+  font-weight:400;
+
+  color:#ffd8ed;
+
+  line-height:1;
+}
+
+.signature-heart{
+
+  font-size:13px;
+
+  color:#ffc5e5;
+
+  margin-top:2px;
+}
+
+
+/* =========================
+   REPLAY
+========================= */
+
+.replay{
+
+  display:block;
+
+  margin:0 auto;
+
+  border:none;
+
+  padding:
+    11px
+    19px;
+
+  border-radius:999px;
+
+  background:
+    rgba(255,255,255,.06);
+
+  border:
+    1px solid
+    rgba(255,255,255,.11);
+
+  color:
+    rgba(255,255,255,.82);
+
+  font-family:
+    "DM Sans",
+    sans-serif;
+
+  font-size:13px;
+
+  font-weight:600;
+
+  cursor:pointer;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer{
+
+  margin-top:25px;
+
+  font-size:9px;
+
+  letter-spacing:2px;
+
+  color:
+    rgba(255,255,255,.23);
+}
+
+
+/* =====================================================
+   🌸 LIGHTWEIGHT FALLING FLOWERS
+===================================================== */
+
+.flower-layer{
+
+  position:fixed;
+
+  inset:0;
+
+  overflow:hidden;
+
+  pointer-events:none;
+
+  z-index:998;
+
+  display:none;
+}
+
+.flower-layer.active{
+  display:block;
+}
+
+.falling-flower{
+
+  position:absolute;
+
+  top:-45px;
+
+  left:0;
+
+  font-size:17px;
+
+  line-height:1;
+
+  opacity:0;
+
+  pointer-events:none;
+
+  will-change:
+    transform,
+    opacity;
+
+  animation-name:
+    flowerFall;
+
+  animation-timing-function:
+    linear;
+
+  animation-fill-mode:
+    forwards;
+}
+
+@keyframes flowerFall{
+
+  0%{
+
+    opacity:0;
+
+    transform:
+      translate3d(
+        0,
+        -50px,
+        0
+      )
+      rotate(0deg)
+      scale(.75);
+
+  }
+
+  10%{
+
+    opacity:.88;
+
+  }
+
+  85%{
+
+    opacity:.72;
+
+  }
+
+  100%{
+
+    opacity:0;
+
+    transform:
+      translate3d(
+        var(--drift),
+        110vh,
+        0
+      )
+      rotate(280deg)
+      scale(1);
+
+  }
+}
+
+
+/* =========================
+   LIGHT CELEBRATION
+========================= */
+
+.celebrate-sparkle{
+
+  position:fixed;
+
+  z-index:999;
+
+  pointer-events:none;
+
+  font-size:18px;
+
+  opacity:0;
+
+  animation:
+    sparklePop
+    .9s
+    ease-out
+    forwards;
+}
+
+@keyframes sparklePop{
+
+  0%{
+    opacity:0;
+
+    transform:
+      scale(.4)
+      translate3d(0,0,0);
+  }
+
+  25%{
+    opacity:1;
+
+    transform:
+      scale(1)
+      translate3d(0,-8px,0);
+  }
+
+  100%{
+    opacity:0;
+
+    transform:
+      scale(.8)
+      translate3d(0,-28px,0);
+  }
+}
+
+
+/* =========================
+   FLASH
+========================= */
+
+.light-flash{
+
+  position:fixed;
+
+  inset:0;
+
+  z-index:997;
+
+  pointer-events:none;
+
+  opacity:0;
+
+  background:
+    radial-gradient(
+      circle at center,
+      rgba(255,200,235,.12),
+      transparent 50%
+    );
+}
+
+.light-flash.active{
+
+  animation:
+    lightFlash
+    .55s
+    ease-out;
+}
+
+@keyframes lightFlash{
+
+  0%{
+    opacity:0;
+  }
+
+  35%{
+    opacity:1;
+  }
+
+  100%{
+    opacity:0;
+  }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media(max-width:430px){
+
+  .page{
+
+    padding:
+      14px
+      11px
+      30px;
+  }
+
+  .card{
+
+    padding:
+      27px
+      18px
+      23px;
+
+    border-radius:32px;
+
+    backdrop-filter:blur(7px);
+
+    -webkit-backdrop-filter:blur(7px);
+  }
+
+  .name{
+    font-size:67px;
+  }
+
+  .birthday{
+    font-size:20px;
+  }
+
+  .subtitle{
+    font-size:12px;
+  }
+
+  .message{
+    font-size:13px;
+  }
+
+  .quote{
+    font-size:30px;
+  }
+
+  .signature-name{
+    font-size:36px;
+  }
+
+  .falling-flower{
+    font-size:15px;
+  }
+
+}
+
+
+/* =========================
+   REDUCED MOTION
+========================= */
+
+@media(prefers-reduced-motion:reduce){
+
+  *,
+  *::before,
+  *::after{
+
+    animation-duration:.01ms !important;
+
+    animation-iteration-count:1 !important;
+
+    scroll-behavior:auto !important;
+  }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- BACKGROUND -->
+
+<div class="background">
+
+  <div class="glow one"></div>
+
+  <div class="glow two"></div>
+
+</div>
+
+
+<!-- LIGHT FLOATING DECOR -->
+
+<div
+  class="float-heart"
+  style="
+    left:8%;
+    font-size:17px;
+    animation-delay:0s;
+  "
+>
+  ♡
+</div>
+
+<div
+  class="float-heart"
+  style="
+    left:27%;
+    font-size:18px;
+    animation-delay:3.5s;
+  "
+>
+  💗
+</div>
+
+<div
+  class="float-heart"
+  style="
+    left:58%;
+    font-size:16px;
+    animation-delay:6s;
+  "
+>
+  ✦
+</div>
+
+<div
+  class="float-heart"
+  style="
+    left:84%;
+    font-size:18px;
+    animation-delay:1.5s;
+  "
+>
+  ♡
+</div>
+
+
+<!-- 🌸 FLOWER LAYER -->
+
+<div
+  id="flowerLayer"
+  class="flower-layer"
+></div>
+
+
+<!-- FLASH -->
+
+<div
+  id="lightFlash"
+  class="light-flash"
+></div>
+
+
+<!-- MAIN -->
+
+<main class="page">
+
+<section class="card">
+
+
+  <div class="badge">
+    ✦ A little surprise for you ✦
+  </div>
+
+
+  <h1 class="name">
+    Drishti
+  </h1>
+
+
+  <div class="birthday">
+    Happy Birthday <span>🎂</span>
+  </div>
+
+
+  <p class="subtitle">
+
+    A tiny corner of the internet made especially
+    to make your day a little more magical. ♡
+
+  </p>
+
+
+  <!-- CAKE -->
+
+  <div class="cake-wrap">
+
+    <div class="cake-shadow"></div>
+
+    <div class="cake-bottom"></div>
+
+    <div class="cake-top">
+
+      <div class="cream"></div>
+
+      <div class="cake-dot dot1"></div>
+
+      <div class="cake-dot dot2"></div>
+
+      <div class="cake-dot dot3"></div>
+
+      <div class="cake-dot dot4"></div>
+
+    </div>
+
+
+    <div class="candle c1"></div>
+
+    <div class="candle c2"></div>
+
+    <div class="candle c3"></div>
+
+
+    <div class="flame f1"></div>
+
+    <div class="flame f2"></div>
+
+    <div class="flame f3"></div>
+
+  </div>
+
+
+  <!-- MESSAGE -->
+
+  <p class="message">
+
+    Today isn't just another day...
+    it's a day to celebrate <b>you</b>. 🌷
+
+    <br>
+
+    May this year bring you beautiful moments,
+    peaceful days, big smiles and countless
+    little reasons to be happy. ✨
+
+  </p>
+
+
+  <!-- OPEN -->
+
+  <button
+    class="main-button"
+    onclick="openSurprise()"
+  >
+    🎁 Open Your Surprise
+  </button>
+
+
+  <!-- SECOND PAGE -->
+
+  <div id="surprise">
+
+
+    <div class="divider"></div>
+
+
+    <div class="quote">
+
+      May your life always be
+      <br>
+      full of little miracles. ✨
+
+    </div>
+
+
+    <p class="note">
+
+      Drishti, I hope you always keep
+      that beautiful smile and never stop
+      chasing the things that make you happy.
+
+      <br><br>
+
+      Here's to another year of memories,
+      laughter and wonderful moments. 🌸
+
+      <br><br>
+
+      <strong>
+        Happy Birthday once again! 🎀
+      </strong>
+
+    </p>
+
+
+    <!-- ONE MORE LITTLE SURPRISE -->
+
+    <a
+      class="youtube-button"
+      href="https://www.youtube.com/@Zen_chxrry"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+
+      <span class="youtube-icon">
+        ▶
+      </span>
+
+      One More Little Surprise ✨
+
+    </a>
+
+
+    <div class="divider"></div>
+
+
+    <button
+      class="replay"
+      onclick="celebrate()"
+    >
+      ✨ Celebrate Again
+    </button>
+
+
+    <!-- SIMPLE LAZURAX -->
+
+    <div class="signature">
+
+      <div class="signature-small">
+        a little birthday wish by
+      </div>
+
+      <div class="signature-name">
+        Lazurax
+      </div>
+      
+  <div class="footer">
+    MADE ♡ FOR DRISHTI
+  </div>
+
+
+</section>
+
+</main>
+
+
+<script>
+
+
+/* =========================
+   OPEN SURPRISE
+========================= */
+
+function openSurprise(){
+
+  const surprise =
+    document.getElementById(
+      "surprise"
+    );
+
+
+  if(
+    surprise.style.display ===
+    "block"
+  ){
+
+    return;
+
+  }
+
+
+  surprise.style.display =
+    "block";
+
+
+  celebrate();
+
+
+  setTimeout(function(){
+
+    surprise.scrollIntoView({
+
+      behavior:"smooth",
+
+      block:"center"
+
+    });
+
+  },120);
+
+}
+
+
+/* =====================================================
+   🌸 LIGHTWEIGHT FLOWER SYSTEM
+===================================================== */
+
+let flowerTimer = null;
+
+let flowerRunning = false;
+
+
+function startFlowers(){
+
+  const layer =
+    document.getElementById(
+      "flowerLayer"
+    );
+
+
+  if(flowerRunning){
+
+    return;
+
+  }
+
+
+  flowerRunning = true;
+
+
+  layer.innerHTML = "";
+
+  layer.classList.add(
+    "active"
+  );
+
+
+  /*
+    Only 18 flowers.
+
+    This keeps the animation
+    smooth on mobile devices.
+  */
+
+  const flowerSymbols = [
+
+    "🌸",
+    "🌷","🏵️",
+    "🌸",
+    "🌺",
+    "🌼",
+    "🌸",
+    "🌷",
+    "🌸","🏵️",
+    "🌺",
+    "🌼",
+    "🌸",
+    "🌷",
+    "🌸",
+    "🌺",
+    "🌼",
+    "🌸",
+    "🌷",
+    "🌸",
+    "🏵️","🍁",
+"☘️","🍂","🪻","🍂","🍁","🏵️","☘️","🌹","🌹","🌹"
+
+  ];
+
+
+  flowerSymbols.forEach(
+    function(symbol,index){
+
+      const flower =
+        document.createElement(
+          "span"
+        );
+
+
+      flower.className =
+        "falling-flower";
+
+
+      flower.textContent =
+        symbol;
+
+
+      /*
+        Spread flowers across
+        the entire screen.
+      */
+
+      flower.style.left =
+        (
+          Math.random()*100
+        ) + "vw";
+
+
+      /*
+        Slight horizontal movement.
+      */
+
+      flower.style.setProperty(
+        "--drift",
+        (
+          Math.random()*120 - 60
+        ) + "px"
+      );
+
+
+      /*
+        Slow enough to look
+        beautiful, but not heavy.
+      */
+
+      flower.style.animationDuration =
+        (
+          6 +
+          Math.random()*3
+        ) + "s";
+
+
+      flower.style.animationDelay =
+        (
+          Math.random()*1.7
+        ) + "s";
+
+
+      flower.style.fontSize =
+        (
+          13 +
+          Math.random()*6
+        ) + "px";
+
+
+      layer.appendChild(
+        flower
+      );
+
+    }
+  );
+
+
+  /*
+    Automatically clean everything
+    after the flowers finish.
+  */
+
+  flowerTimer =
+    setTimeout(
+      function(){
+
+        layer.classList.remove(
+          "active"
+        );
+
+        layer.innerHTML = "";
+
+        flowerRunning = false;
+
+        flowerTimer = null;
+
+      },
+      10500
+    );
+
+}
+
+
+/* =========================
+   LIGHT CELEBRATION
+========================= */
+
+let celebrating = false;
+
+
+function celebrate(){
+
+  if(celebrating){
+
+    return;
+
+  }
+
+
+  celebrating = true;
+
+
+  /*
+    Start lightweight flowers.
+  */
+
+  startFlowers();
+
+
+  const flash =
+    document.getElementById(
+      "lightFlash"
+    );
+
+
+  flash.classList.remove(
+    "active"
+  );
+
+
+  void flash.offsetWidth;
+
+
+  flash.classList.add(
+    "active"
+  );
+
+
+  /*
+    Only 6 tiny sparkles.
+  */
+
+  const symbols = [
+
+    "✦",
+    "♡",
+    "✧",
+    "✨",
+    "⋆",
+    "♡"
+
+  ];
+
+
+  for(
+    let i=0;
+    i<6;
+    i++
+  ){
+
+    const sparkle =
+      document.createElement(
+        "div"
+      );
+
+
+    sparkle.className =
+      "celebrate-sparkle";
+
+
+    sparkle.textContent =
+      symbols[i];
+
+
+    sparkle.style.left =
+      (
+        25 +
+        Math.random()*50
+      ) + "vw";
+
+
+    sparkle.style.top =
+      (
+        25 +
+        Math.random()*45
+      ) + "vh";
+
+
+    sparkle.style.animationDelay =
+      (
+        Math.random()*.18
+      ) + "s";
+
+
+    document.body.appendChild(
+      sparkle
+    );
+
+
+    setTimeout(function(){
+
+      sparkle.remove();
+
+    },1200);
+
+  }
+
+
+  /*
+    Small vibration.
+  */
+
+  if(
+    "vibrate" in navigator &&
+    typeof navigator.vibrate ===
+      "function"
+  ){
+
+    try{
+
+      navigator.vibrate(35);
+
+    }catch(error){}
+
+  }
+
+
+  setTimeout(function(){
+
+    celebrating = false;
+
+  },1300);
+
+}
+
+
+/* =========================
+   REMOVE FLASH CLASS
+========================= */
+
+document
+  .getElementById("lightFlash")
+  .addEventListener(
+    "animationend",
+    function(){
+
+      this.classList.remove(
+        "active"
+      );
+
+    }
+  );
+
+
+</script>
+
+</body>
+</html>
